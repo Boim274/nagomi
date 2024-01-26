@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(22, 132, 0, 0.2);
+    padding: 40px;
+    height: flex;
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.e {
+    text-align: center;
+    color: rgb(64, 0, 0);
+}
+
+.form-control {
+    display: flex;   
+}
+
+.card a{
+    color:  rgb(0, 0, 255);
+    margin-left: 200px;
+}
+
+.card a:hover{
+    color:  rgb(0, 0, 142);
+    margin-left: 200px;
+}
+
+.card-body button{
+    background-color: rgb(155, 228, 44);
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card-body button:hover {
+    background-color: greenyellow;
+}
+
+.form-control {
+    border-radius: 10px;
+    width: 200%;
+    font-size: 16px;
+    height: 30px;
+    border: 1px solid rgb(0, 0, 0, 0.4);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

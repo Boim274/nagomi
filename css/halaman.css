@@ -1,0 +1,274 @@
+/* Import font dari Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Reset styling default dan atur font utama */
+* {
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Styling dasar body */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffffcc;
+}
+/* navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: white;
+  background-color: rgb(86, 13, 13);
+
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: flex;
+  color: white;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+}
+
+.navbar-right :hover {
+  transform: scale(1.1);
+  color: #d7ff5f;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/* Animasi elemen try menggunakan keyframes */
+.try {
+  overflow: hidden;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.try h1, .try p {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 3s forwards;
+}
+
+/* Styling bagian selamat */
+.selamat {
+  font-weight: bold;
+  text-align: center;
+  background-color: rgba(58, 0, 0, 0.4);
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+.selamat h1 {
+  color: #ffffff;
+  font-weight: bold;
+
+}
+
+.selamat p {
+  font-size: larger;
+  font-weight: bold;
+  color: #480000; /* Ganti dengan warna yang diinginkan */
+  animation: colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange {
+  from {
+    color: #3cb400; /* Warna awal teks */
+  }
+  to {
+    color: rgb(255, 255, 255); /* Warna tujuan teks */
+  }
+}
+
+/* Hover effect untuk bagian selamat */
+.selamat:hover {
+  color: #470000;
+}
+.selamat {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.selamat h1 {
+  display: inline-block;
+  transform: translateX(100%);
+  animation: slideIn 2s forwards;
+  -webkit-animation: slideIn 2s forwards;
+}
+
+.selamat h2 {
+  transform: translateX(100%);
+  animation: slideIn 2s forwards;
+  -webkit-animation: slideIn 2s forwards;
+}
+
+/* Styling logo */
+.logo {
+  padding-top: 5%;
+  margin: auto;
+  padding: 5%;
+  background-color: white;
+}
+
+/* Hover effect untuk logo */
+.logo:hover {
+  color: #860000;
+}
+
+/* Styling gambar dalam logo */
+.logo img {
+  border-radius: 20%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeIn 2s forwards, fadeInScale 2s forwards;
+}
+
+/* Animasi fadeIn dan fadeInScale untuk gambar dalam logo */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Hover effect untuk gambar dalam logo */
+.logo img:hover {
+  background-color: transparent;
+}
+
+/* Styling teks dalam logo */
+.logo h1, .logo p {
+  color: #311010;
+}
+
+/* Styling bagian links */
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling bagian interview */
+.interview {
+  padding: 30px;
+}
+
+.interview button {
+  background-color: #96b340;
+  padding: 20px 100px;
+  border: none;
+  transition: transform 1s;
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Hover effect untuk tombol interview */
+.interview button:hover {
+  transform: scale(1.1);
+  background-color: #dcff74;
+  color: #491e1e;
+}
+
+/* Styling bagian int */
+.int {
+  font-weight: bold;
+  color: #3e5300;
+  font-size: 400;
+  text-align: center;
+}
+
+.int p {
+  text-align: center;
+  color: rgb(166, 68, 68);
+}
+/* Styling bagian footer */
+footer {
+  background-color: #560D0D;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-top: 20%;
+  text-align: center;
+}
+
+footer p {
+  font-size: small;
+}
+
+
+
+/* Media Query untuk perangkat dengan lebar maksimum 600px */
+@media screen and (max-width: 600px) {
+  /* Penyesuaian untuk tampilan layar kecil */
+
+
+
+  .try {
+    font-size: small;
+  }
+
+  .navbar {
+    padding: 20px;
+  }
+
+  .logo img {
+    border-radius: 25%;
+  }
+
+  .interview button {
+    padding: 20px 60px;
+  }
+
+  .int {
+
+    text-align: center;
+    font-size: small;
+  }
+}

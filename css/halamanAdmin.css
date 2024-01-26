@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+.sidebar {
+  position: fixed;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  background: #612a2a;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #a04f4f;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(174, 0, 0, 0.5);
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: rgb(0, 0, 0, 0.2);
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+label #btn{
+  left: 250px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: 195px;
+  top: 17px;
+  font-size: 30px;
+  color: #ffffff;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: -250px;
+}
+#check:checked ~ label #btn{
+  left: 40px;
+  opacity: 1;
+  pointer-events: auto;
+}
+#check:checked ~ label #cancel{
+  left: -195px;
+}
+#check:checked ~ section{
+  margin-left: 0px;
+}
+section{
+  background-position: left;
+  background-size: cover;
+  max-height: max-content;
+  background-image: url(../img/japan.jpg);
+  /* background-image: url("../img/japan.jpg") ; */
+}
+
+ .conten {
+    padding-block-end: 15%;
+    text-align: center;
+    font-size: large;
+    color: rgb(255, 255, 255);
+    background-color: rgba(43, 43, 43, 0.5);
+ }
+.conten img {
+    border-radius: 20%;
+    height: 150px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
+.conten h1, p {
+  text-shadow: 5px 5px 5px rgb(0, 0, 0, 0.8) ;
+  font-size: xx-large;
+}
+
+.lg {
+  padding: 100px;
+}
+
+.conten1 h1{
+  text-align: center;
+  padding: 20px;
+  font-weight: 300;
+  background-color: #612a2a;
+  color: white;
+}
+
+.conten1 form {
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.conten1 label {
+  font-size: larger;
+}
+
+.conten1 textarea {
+  padding:  20px;
+  border: 2px solid #612a2a;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 16px;
+  resize: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.conten1 input {
+  background-color: rgb(125, 185, 35);
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.data {
+  width: flex;
+  text-align: center;
+  padding: 20px;
+  background-color: #612a2a;
+  color: white;
+}
+
+.data h1 {
+  font-weight: 300;
+}
+.conten1 input:hover{
+  background-color: rgb(255, 196, 0);
+}
+
+.logout a{
+    color: white;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+.conten {
+    padding: 86px;
+    height: 500px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(43, 43, 43, 0.5);
+    
+ }
+
+ .lg {
+  padding: 15px;
+ }
+ 
+ .conten h1, p {
+  font-size: larger;
+ }
+.conten1 textarea {
+  height: 100px;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+ .conten1 form {
+  margin-left: 10px;
+}
+ 
+ section {
+  height: 100vh;
+ }
+}

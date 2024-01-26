@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #927374;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150vh;
+        }
+
+        .container {
+            background-color: #FFFFFFCC;
+            color: #772226;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            box-sizing: border-box;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .user-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input {
+            margin-bottom: 20px;
+        }
+
+        .input span {
+            font-size: 14px;
+            font-weight: bold;
+            color: #772226;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        input[type="submit"] {
+            background-color: #BAE04C;
+            color: #772226;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #758b32;
+            color: #FFFFFFCC;
+        }
+
+
+        .login a {
+        color: #772226;
+        text-decoration: none;
+        font-size: small;
+        }
+
+        .login a:hover {
+    text-decoration: underline;
+    
+        }
+
+        /* Responsive styles */
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Register Form</div>
+        <form action="registration.php">
+            <div class="user-details">
+                <div class="input">
+                    <span>Nama Lengkap</span>
+                    <input type="text" placeholder="Masukkan nama lengkap" required>
+                </div>
+                <div class="input">
+                    <span>Username</span>
+                    <input type="text" placeholder="Masukkan username" required>
+                </div>
+                <div class="input">
+                    <span>Email</span>
+                    <input type="email" placeholder="Masukkan email" required>
+                </div>
+                <div class="input">
+                    <span>Password</span>
+                    <input type="password" placeholder="Masukkan password" required>
+                </div>
+                <div class="input">
+                    <span>Masukkan ulang Password</span>
+                    <input type="password" placeholder="Masukkan ulang password" required>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+            <div class="login">
+                <a href="/html/index.html">Kembali Ke Login?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

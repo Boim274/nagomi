@@ -1,0 +1,76 @@
+/* index */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8d7da; /* Subtle red background color */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 5% auto;
+  }
+  
+  .card {
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .fs-2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #dc3545; /* Red color for emphasis */
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    color: #dc3545; /* Red color for labels */
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  .text-danger-emphasis {
+    color: #dc3545;
+  }
+  
+  .alert {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .text-end {
+    display: block;
+    text-align: right;
+    color: #dc3545; /* Red color for the link */
+  }

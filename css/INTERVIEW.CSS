@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+body {
+    background-color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(86, 13, 13);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.login-button {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.navbar-right :hover {
+    transform: scale(1.1);
+    color: #96b340;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/* 
+/* 
+section .container1 {
+
+} */ 
+/* Section Star */
+.inr {
+    padding: 5%;
+    /* padding: 20%; */
+    text-align: center;
+    font-size: large;
+    color: rgb(0, 0, 0);
+}
+
+.data  {
+    padding: 2%;
+    text-align: center;
+    border-width: 1%;
+    /*border: 2px solid #000000;
+    */border-radius: 10px;
+    /*margin-left: 3%;
+    */background-color: #9b4646;
+    color: rgb(255, 255, 255);
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+}
+
+.pertanyaan {
+    max-width: 500px;
+    margin: 0;
+    padding-left: 50px;
+    padding-top: 20PX;
+}
+
+.pertanyaan input[type=text] {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #464646;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.soal {
+    padding: 2%;
+    text-align: center;
+    border-width: 1%;
+    /*border: 2px solid #000000;*/
+    border-radius: 10px;
+    /*margin-left: 3%;
+    */background-color: #9b4646;
+    color: rgb(255, 255, 255);
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+}
+
+/* Gaya umum untuk label */
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block; /* Membuat label menggunakan satu baris penuh */
+  }
+  
+  /* Gaya untuk elemen select */
+  select {
+    padding: 15px;
+    /*Menambahkanruangdisekitarpilihan*/font-size: 16px;
+    border-radius: 5px;
+    /*Membuatsudutelemenlebihlembut*/border: 1px solid #5c5c5c;
+    /*Garispinggirelemen*/width: 500px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+  
+  /* Gaya untuk opsi dalam elemen select */
+  option {
+    font-size: 16px;
+  }
+  
+  /* Memberikan ruang di antara elemen */
+  br {
+    margin-bottom: 12px;
+  }
+  
+
+
+.pertanyaan textarea {
+    width: 200%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #848484;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 16px;
+    resize: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.kirim {
+    padding-bottom: 4%;
+    justify-content: right;
+}
+
+.kirim input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.kirim input[type=submit]:hover {
+    background-color: #45a049;
+}
+.alert1 p{
+    text-align: center;
+}
+
+/* footer */
+footer {
+    color: white;
+    background-color:rgb(86, 13, 13);
+    text-align: center;
+    padding: 1%;
+    font-size: small;
+}
+
+
+/* android */
+@media screen and (max-width: 600px) {
+
+  .inr {
+  padding: 15%;
+  }
+footer {
+    padding: 1%;
+    font-size: small;
+}
+.kirim input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+.kirim {
+    padding-bottom: 100px;
+}
+.pertanyaan {
+    padding-left: 10px;
+}
+
+select {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #5c5c5c;
+    width: 300px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+option {
+    font-size: 10px;
+}
+.pertanyaan textarea {
+    width: 100%;
+}
+
+.pertanyaan input[type=text] {
+    width: 300px;
+}
+  }
